@@ -1,0 +1,35 @@
+.back:where(.astro-7a7bzblm) {
+    all: unset;
+    cursor: pointer
+}
+
+.back:where(.astro-7a7bzblm):hover {
+    all: unset;
+    cursor: pointer
+}
+
+img:where(.astro-7a7bzblm) {
+    height: 3rem;
+    width: 3rem;
+    filter: invert(100%)
+}
+
+img:where(.astro-7a7bzblm):hover,img:where(.astro-7a7bzblm):active,img:where(.astro-7a7bzblm):focus {
+    filter: invert(100%) drop-shadow(0px 0px 5px white);
+    animation: var(--animation-pulse)
+}
+
+header:where(.astro-7a7bzblm) {
+    position: fixed;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 4rem 1fr 4rem;
+    text-align: center;
+    padding: 0;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    width: 100%;
+    z-index: 10;
+    border-radius: 0 0 var(--radius-3) var(--radius-3)!important
+}
